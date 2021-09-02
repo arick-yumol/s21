@@ -1,0 +1,83 @@
+===USER DATA MODEL===
+users = {
+	"id": ObjectId,
+	"userName": "String",
+	"emailAddress": "String",
+	"password": "String"
+}
+
+
+===PRODUCT DATA MODEL===
+products = [
+	"peripherals" = [
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//mouse
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean		//stock availability
+		},
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//keyboard
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		},
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//headset
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		}
+	],
+	"components" = [
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//processor
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		},
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//motherboard
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		},
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",				//ram
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		},
+		{
+			"itemID": ObjectID
+			"itemName": "String",
+			"itemType": "String",			//power supply
+			"itemPrice": Numeric,
+			"itemAvailability": Boolean
+		}
+	]
+]
+
+===ORDER DATA MODEL===
+"userID" = ObjectID,
+itemOrder = [
+	{
+		"itemID": ObjectID
+		"itemName": "String",
+		"itemType": "String",				//mouse
+		"itemPrice": Numeric
+	},
+	{
+		"itemID": ObjectID
+		"itemName": "String",
+		"itemType": "String",				//ram
+		"itemPrice": Numeric
+	}
+],
+"orderDate": ISODate()
